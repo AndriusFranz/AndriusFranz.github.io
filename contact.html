@@ -1,0 +1,74 @@
+<!-- 	
+	Project 4
+    Name: Franz Fortunato
+    Date: 07-27-2023
+    Description: Portfolio
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Contact Form</title>
+</head>
+
+    
+
+<body>
+  <nav>
+    <a href="index.html">
+      <img id="logo" src="/images/logo.png" alt="Logo">
+    </a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#aboutMe">About me</a></li>
+      <li><a href="#video" id="videosLink">Videos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div id="hamburger" class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </nav>
+  <main>
+    <section id="contact">
+      <h1>Contact</h1>
+      <div id="contact-content">
+        <p>Please fill out the form if you have any questions 😊</p>
+      </div>
+      <div class="form-container">
+        <form id="contactForm" action="#" method="post" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <div class="error-message" id="name-error">Please enter a valid name.</div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            <div class="error-message" id="phone-error">Please enter a valid phone number.</div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error-message" id="email-error">Please enter a valid email address.</div>
+          </div>
+          <div class="form-group">
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" rows="10" required></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <div id="error-message" class="hidden">Please fill out all fields correctly.</div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="javascript.js"></script>
+</body>
+</html>
